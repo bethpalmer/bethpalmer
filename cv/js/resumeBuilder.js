@@ -1,15 +1,15 @@
 var bio = {
     "name": "Beth Palmer",
-    "role": "Front-end Developer",
+    "role": "Front-End Developer",
     "contacts": {
         "mobile": "07523257537",
         "email": "bpalmer360@gmail.com",
         "github": "bethpalmer",
-        "blog": "www.bstylee.me.uk",
-        "location": "Brighton, UK"
+        "website": "www.bethpalmer.co.uk",
+        "location": "Brighton and Hove"
     },
     "biopic": "images/profile.jpg",
-    "welcomeMessage": "Helloooo, welcome to my online resume where I get to tell you a bit about myself whilst also showing off some of my JavaScript skills. Happy you stopped by :)",
+    "welcomeMessage": "Helloooo, welcome to my online CV. where I get to tell you a bit about myself whilst also showing off some of my JavaScript skills. Happy you stopped by :)",
     "skills": ["HTML, CSS, JavaScript, JQuery, JSON, Git, SQL, Frameworks, Wordpress, UX, Illustrator",
         "Cross Browser and Device Testing, Scoping, Process Analysis, Troubleshooting, Desktop Support",
         "(some knowledge of) Ruby, Grunt, Infrastructure, SASS, BEM",
@@ -24,9 +24,9 @@ var bio = {
         var email = HTMLemail.replace("%data%", bio.contacts.email);
         var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
         var github = HTMLgithub.replace("%data%", bio.contacts.github);
-        var blog = HTMLblog.replace("%data%", bio.contacts.blog);
+        var website = HTMLwebsite.replace("%data%", bio.contacts.website);
         var location = HTMLlocation.replace("%data%", bio.contacts.location);
-        $("#topContacts, #footerContacts").append(email, mobile, github, blog, location);
+        $("#topContacts, #footerContacts").append(email, mobile, github, website, location);
 
         $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
 
@@ -115,21 +115,21 @@ var projects = {
             "<li>Analysed existing site to inform scoping and defining brief with the client.</li>" +
             "<li>Fulfilled the brief by creating a fully responsive website using the bootstrap framework, retaining the urban edgy look of the brand, marrying it with simplicity and space.</li></ul>",
         "images": ["../images/mcuk.jpg", "../images/mcuk-about.jpg", "../images/mcuk-mobile.jpg"],
-        "url": "http://www.bethpalmer.co.uk/mcuk"
+        "url": "../mcuk/index.html"
     }, {
-        "title": "Online Resume",
+        "title": "Online CV",
         "dates": "Nov 2016",
         "description":"<ul class='work'>" +
-            "<li>Created an online CV including an interactive map of where I’ve lived and worked.</li>" +
-            "<li>Exceeded the brief requirements by including additional rollover images for added flavour.</li></ul>",
+            "<li>Created a responsive online CV using dynamic HTML laoded via jQuery from JavaScript objects making future updates easier.</li>" +
+            "<li>Included an interactive map of where I’ve lived and worked and rollover images on profile pic and skills section for added flavour.</li></ul>",
         "images": ["../images/resume.jpg", "../images/map.jpg"],
-        "url": "http://www.bethpalmer.co.uk/resume"
+        "url": "#"
     }, {
-        "title": "Project work Portfolio site",
+        "title": "Portfolio site",
         "dates": "Sept 2016",
-        "description": "A single page portfolio site created as project work towards my Udacity nanodegree.",
+        "description": "A single page portfolio site created to display my development work and graphics skills.",
         "images": ["../images/portfolio.jpg"],
-        "url": "http://www.bethpalmer.co.uk/"
+        "url": "../index.html"
     }],
     "display": function() {
         projects.projects.forEach(function(projectInfo) {
@@ -225,5 +225,3 @@ education.display();
 // $("#workExperience").prepend(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
-
-console.log("And that's a wrap people!");

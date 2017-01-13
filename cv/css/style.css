@@ -1,3 +1,11 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body,
 div,
 ul,
@@ -20,11 +28,11 @@ h6 {
 
 .education-entry,
 .work-entry {
-    padding: 0 5%;
+    padding: 1% 5%;
 }
 
 .project-entry {
-    padding: 0 5%;
+    padding: 1% 5%;
     display: block;
     float: left;
 }
@@ -46,6 +54,7 @@ h2 {
     color: #999;
     line-height: 29px;
     padding: 10px;
+    margin-top: 0.5em;
 }
 
 h3 {
@@ -166,6 +175,7 @@ a {
     flex-wrap: nowrap;
     padding: 10px;
     height: 100%;
+    min-width: 250px;
 }
 
 .center-content {
@@ -179,6 +189,10 @@ ul {
 #major {
     padding-left: 0;
     margin-left: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
 }
 
 #inline li {
@@ -232,6 +246,7 @@ span {
     padding-bottom: 5%;
 }
 
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -260,12 +275,23 @@ span {
     };
 }
 
-/*moved these properties to the id / class to apply to all sizes
-/*@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}*/
-
-/*TODO Make site mobile ready */
+@media only screen and (max-width: 480px) {
+   #role {
+        display: block;
+    }
+    .flex-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .biopic {
+        width: 250px;
+    }
+    .project-entry {
+    float: none;
+    }
+    .projectpic {
+    float: none;
+    max-width: 95%;
+}
+}

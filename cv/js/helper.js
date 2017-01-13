@@ -1,18 +1,18 @@
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span class="white-text">%data%</span><hr>';
+var HTMLheaderRole = '<span id="role" class="white-text">%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
+var HTMLwebsite = '<li class="flex-item"><span class="orange-text">website</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><div id="skills" class="flex-column show"></div>';
+var HTMLskillsStart = '<div class="flex-column"><h3 id="skills-h3"">Skills at a Glance:</h3></div><div id="skills" class="flex-column show"></div>';
 var HTMLskills = '<span class="white-text flex-item skillstext">%data%</span>';
 // REMOVED var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>' and the <ul> from above:
 // Reason: The awesomeness hover over would not work with nested flex boxes. Grandparent #skills div would not take on height of li grandchildren.
