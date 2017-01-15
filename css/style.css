@@ -38,7 +38,7 @@ h3 {
 
 hr {
     border: 0;
-	height: 12px;
+	 height: 12px;
     box-shadow: inset 0 12px 12px -12px rgba(244, 155, 19, 1);
 }
 
@@ -51,7 +51,7 @@ hr.lower {
 hr.mod {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(244, 155, 19, 0), rgba(244, 155, 19, 0.75), rgba(244, 155, 19, 0));
+    box-shadow: inset 0 2px 2px -2px rgba(244, 155, 19, 1); 
 }
 
 .logo {

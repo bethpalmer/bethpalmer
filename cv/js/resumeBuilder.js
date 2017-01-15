@@ -9,7 +9,7 @@ var bio = {
         "location": "Brighton and Hove"
     },
     "biopic": "images/profile.jpg",
-    "welcomeMessage": "Helloooo, welcome to my online CV. where I get to tell you a bit about myself whilst also showing off some of my JavaScript skills. Happy you stopped by :)",
+    "welcomeMessage": "Thanks for visiting my online CV. Here you'll find my relevant work and project experience as well as education and training history, whilst also acting as a showcase for my front-end development skills.",
     "skills": ["HTML, CSS, JavaScript, JQuery, JSON, Git, SQL, Frameworks, Wordpress, UX, Illustrator",
         "Cross Browser and Device Testing, Scoping, Process Analysis, Troubleshooting, Desktop Support",
         "(some knowledge of) Ruby, Grunt, Infrastructure, SASS, BEM",
@@ -122,13 +122,13 @@ var projects = {
         "description":"<ul class='work'>" +
             "<li>Created a responsive online CV using dynamic HTML laoded via jQuery from JavaScript objects making future updates easier.</li>" +
             "<li>Included an interactive map of where I’ve lived and worked and rollover images on profile pic and skills section for added flavour.</li></ul>",
-        "images": ["../images/resume.jpg", "../images/map.jpg"],
+        "images": ["../images/resume.jpg", "../images/cv-mobile.jpg"],
         "url": "#"
     }, {
         "title": "Portfolio site",
         "dates": "Sept 2016",
         "description": "A single page portfolio site created to display my development work and graphics skills.",
-        "images": ["../images/portfolio.jpg"],
+        "images": ["../images/portfolio.jpg", "../images/portfolio-mobile.jpg"],
         "url": "../index.html"
     }],
     "display": function() {
