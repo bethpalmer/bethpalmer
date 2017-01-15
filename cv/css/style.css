@@ -285,7 +285,9 @@ span {
         text-align: left;
     }
     .biopic {
-        width: 250px;
+        width: 80%;
+        float: none;
+        margin: auto;
     }
     .project-entry {
     float: none;

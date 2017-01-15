@@ -1,9 +1,11 @@
 body {
     text-align: center;
     font-family: 'Kalam', cursive, Verdana, Geneva, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
+	font-family: 'Kalam', cursive, Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
@@ -12,11 +14,13 @@ h1 {
 }
 
 h2 {
+	font-family: "Roboto", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 }
 
 h3 {
+	font-family: 'Kalam', cursive, Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 400;
@@ -24,11 +28,13 @@ h3 {
 }
 
 p {
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 }
 
 li {
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 }
