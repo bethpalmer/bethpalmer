@@ -1,16 +1,16 @@
 var bio = {
     "name": "Beth Palmer",
-    "role": "Front-End Developer",
+    "role": "Creative and Website Designer",
     "contacts": {
         "mobile": "07523257537",
-        "email": "bpalmer360@gmail.com",
+        "email": "bethpalmerdesigns@gmail.com",
         "github": "bethpalmer",
         "website": "www.bethpalmer.co.uk",
         "location": "Brighton and Hove"
     },
     "biopic": "images/profile.jpg",
-    "welcomeMessage": "Thanks for visiting my online CV. Here you'll find my relevant work and project experience as well as education and training history, whilst also acting as a showcase for my front-end development skills.",
-    "skills": ["HTML, CSS, JavaScript, JQuery, JSON, Git, SQL, Frameworks, Wordpress, UX, Illustrator",
+    "welcomeMessage": "Thanks for visiting my online CV. Here you'll find my relevant work and project experience as well as education and training history.",
+    "skills": ["HTML, CSS, JavaScript, JQuery, Optimisation, Git, SQL, Frameworks, Wordpress, UX, Illustrator",
         "Cross Browser and Device Testing, Scoping, Process Analysis, Troubleshooting, Desktop Support",
         "(some knowledge of) Ruby, Grunt, Infrastructure, SASS, BEM",
     ],
@@ -69,6 +69,18 @@ var bio = {
 
 var work = {
     "jobs": [{
+        "title": "Creative and Web Designer",
+        "employer": "Freelance",
+        "dates": "Jan 2017 - ongoing",
+        "location": "Hove",
+        "description":
+            "<ul class='work'>" +
+            "<li>Full website design services, creating bespoke web systems from conception of breif through to product launch and post launch support.</li>" +
+            "<li>Databse support and integration, website optimisation, add on services as well as wordpress products if desired.</li>" +
+            "<li>Additional design services such as Branding and Print Media.</li></ul>",
+        "url": "http://www.bethpalmer.co.uk/"
+    },
+    {
         "title": "IT Coordinator",
         "employer": "Concordia Ltd",
         "dates": "Jun 2010 - Dec 2014",
@@ -76,7 +88,7 @@ var work = {
         "description":
             "<ul class='work'>" +
             "<li>Managed all aspects of IT provision and support for this organisation of 25, including IT strategy, database, infrastructure, customer portals and office tech.</li>" +
-            "<li>Conceived, designed and managed the implementation of a £100k workflow management system to replace legacy database and customer portals.</li>" +
+            "<li>Conceived, designed and managed the implementation of a £150k workflow management system to replace legacy database and customer portals.</li>" +
             "<li>Enabled customers to interface directly with the system reducing administration hours spent on data entry by at least 10% year.</li>" +
             "<li>Planned and managed the implementation of the virtualisation of internal infrastructure from an array of outdated servers, neutralising the risk of hardware failure.</li></ul>",
         "url": "http://www.concordia.org.uk/"
@@ -109,33 +121,35 @@ var work = {
 
 var projects = {
     "projects": [{
+        "title": "Essential Blends",
+        "dates": "Jun 2017 - Jun 2017",
+        "description": "<ul class='work'>" +
+            "<li>Designing and developing a visually appealing wordpress single page landing site, channeling customers to other business social media and etsy shop.</li>" +
+            "<li>The site displays effectively all screen sizes.</li></ul>",
+        "images": ["../images/essblends-laptop.jpg", "../images/essblends-mobile.jpg"],
+        "url": "http://www.myessentialblends.co.uk/"
+    },{
+        "title": "SFACA Accountancy Site",
+        "dates": "Apr 2017 - Apr 2017",
+        "description": "<ul class='work'>" +
+            "<li>Designing and developing a visually appealing scrolling website based on analysis of existing website.</li>" +
+            "<li>The site displays effectively all screen sizes. Tab panels are used to break up text heavy areas.</li></ul>",
+        "images": ["../images/sfaca-laptop.jpg", "../images/sfaca-mobile.jpg"],
+        "url": "https://www.sfaca.co.uk/"
+    },{
         "title": "Mondays Child UK",
-        "dates": "Dec 2016 - Jan 2017",
+        "dates": "Jan 2017 - Mar 2017",
         "description": "<ul class='work'>" +
             "<li>Analysed existing site to inform scoping and defining brief with the client.</li>" +
             "<li>Fulfilled the brief by creating a fully responsive website using the bootstrap framework, retaining the urban edgy look of the brand, marrying it with simplicity and space.</li></ul>",
-        "images": ["../images/mcuk.jpg", "../images/mcuk-about.jpg", "../images/mcuk-mobile.jpg"],
-        "url": "../mcuk/index.html"
-    }, {
-        "title": "Online CV",
-        "dates": "Nov 2016",
-        "description":"<ul class='work'>" +
-            "<li>Created a responsive online CV using dynamic HTML laoded via jQuery from JavaScript objects making future updates easier.</li>" +
-            "<li>Included an interactive map of where I’ve lived and worked and rollover images on profile pic and skills section for added flavour.</li></ul>",
-        "images": ["../images/resume.jpg", "../images/cv-mobile.jpg"],
-        "url": "#"
-    }, {
-        "title": "Portfolio site",
-        "dates": "Sept 2016",
-        "description": "A single page portfolio site created to display my development work and graphics skills.",
-        "images": ["../images/portfolio.jpg", "../images/portfolio-mobile.jpg"],
-        "url": "../index.html"
+        "images": ["../images/mcuk-laptop.jpg", "../images/mcuk-mobile.jpg"],
+        "url": "http://www.mondayschilduk.org"
     }],
     "display": function() {
         projects.projects.forEach(function(projectInfo) {
             $("#projects").append(HTMLprojectStart);
 
-            var projectTitle = HTMLprojectTitle.replace("%data%", projectInfo.title);
+            var projectTitle = HTMLprojectTitle.replace("%data%", projectInfo.title).replace("#", projectInfo.url);
             var projectDates = HTMLprojectDates.replace("%data%", projectInfo.dates);
             var projectDescription = HTMLprojectDescription.replace("%data%", projectInfo.description);
             $(".project-entry:last").append(projectTitle, projectDates, projectDescription);
@@ -173,7 +187,7 @@ var education = {
     "onlineCourses": [{
         "title": "Front-end Developer Nanodegree",
         "school": "Udacity",
-        "dates": "Jul 2016 - present",
+        "dates": "Jul 2016 - Jun 2017",
         "url": "https://www.udacity.com"
     }, {
         "title": "JavaScript Basics / Introduction to JQuery",
@@ -221,7 +235,5 @@ bio.display();
 work.display();
 projects.display();
 education.display();
-
-// $("#workExperience").prepend(internationalizeButton);
 
 $("#mapDiv").append(googleMap);

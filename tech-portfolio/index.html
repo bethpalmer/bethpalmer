@@ -5,15 +5,15 @@
 	<title>Front End Dev Portfolio Site</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
 	<header class="row">
-	  <div class="col-xs-6 logo"><img src="images/flower-ds.png" alt="Simple orange flower logo"></div>
+	  <div class="col-xs-6 logo"><img src="../images/flower-ds.png" alt="Simple orange flower logo"></div>
 	  <div class="col-xs-6 text-right text-uppercase">
 	    <h1>Beth Palmer</h1>
 	    <h3>Front-end Ninja</h3>
@@ -27,21 +27,16 @@
 			<picture>
 				<source
 					media="(max-width: 991px)"
-					srcset="images/word_cloud_zoomed.png" class="img-responsive">
+					srcset="../images/word_cloud_zoomed.png" class="img-responsive">
 				<source
 					media="(min-width: 992px)"
-					srcset="images/word_cloud.png" class="img-responsive">
-				<img src="images/word_cloud.png" class="img-responsive" alt="Custom word cloud showing terminology related to front-end web design">
+					srcset="../images/word_cloud.png" class="img-responsive">
+				<img src="../images/word_cloud.png" class="img-responsive" alt="Custom word cloud showing terminology related to front-end web design">
 			</picture>
       <hr class="mod">
 		</div>
 	</section>
-  <section class="row">
-    <div class="col-md-12 text-uppercase">
-      <h3>Currently looking for web dev opportunities
-      </picture>
-    </div>
-  </section>
+  
 	<div class="row">
 		<div class="col-md-12 text-uppercase">
 			<h2>Featured Work</h2>
@@ -53,9 +48,9 @@
 	<section class="row featured">
 	  <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="middle">
-             <img src="images/mcuk-about.jpg" alt="Image of Mondays Child UK About Us page" class="img-responsive" data-toggle="modal" data-target="#mcuk">
+             <img src="../images/mcuk-about.jpg" alt="Image of Mondays Child UK About Us page" class="img-responsive" data-toggle="modal" data-target="#mcuk">
             <figcaption>
-                <a href="http://www.bethpalmer.co.uk/mcuk/index.html" target="_blank"><h3 class="text-center text-uppercase">Mondays Child UK</h3></a>
+                <a href="../mcuk/index.html" target="_blank"><h3 class="text-center text-uppercase">Mondays Child UK</h3></a>
                 <ul>
                     <li>Carried out analysis of clients legacy site to inform project scoping and work with the client to identify the brief.</li>
                     <li>Fulfilled the brief by retaining the urban edgy look of the brand and marrying it with more simplicity and space in this fully responsive website created using bootstrap framework.</li>
@@ -66,9 +61,9 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="middle">
-             <img src="images/arcade-game.jpg" alt="Image of Arcade Game" class="img-responsive" data-toggle="modal" data-target="#game">
+             <img src="../images/arcade-game.jpg" alt="Image of Arcade Game" class="img-responsive" data-toggle="modal" data-target="#game">
             <figcaption>
-                <a href="./arcade-game/index.html" target="_blank"><h3 class="text-center text-uppercase">Arcade Game Project</h3></a>
+                <a href="../arcade-game/index.html" target="_blank"><h3 class="text-center text-uppercase">Arcade Game Project</h3></a>
                 <ul>
                     <li>Classic arcade game recreated using JavaScript object orientated programming.</li>
                     <li>Controlled using input from keyboard arrow keys.</li>
@@ -79,9 +74,9 @@
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="middle">
-             <img src="images/resume.jpg" alt="Image of Beth's online CV page" class="img-responsive" data-toggle="modal" data-target="#resume">
+             <img src="../images/resume.jpg" alt="Image of Beth's online CV page" class="img-responsive" data-toggle="modal" data-target="#resume">
             <figcaption>
-                <a href="./cv/index.html" target="_blank"><h3 class="text-center text-uppercase">Online CV</h3></a>
+                <a href="../cv/index.html" target="_blank"><h3 class="text-center text-uppercase">Online CV</h3></a>
                 <ul>
                     <li>This responsive online version of my CV was created using a flexbox layout.</li>
                     <li>The DOM is populated with dynamic HTML loaded through jQuery selectors accessing data stored in JavaScript objects which makes the site very easy to update.</li>
@@ -94,9 +89,9 @@
 <section class="row featured">
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="middle">
-             <img src="images/portfolio.jpg" alt="Image of Portfolio site" class="img-responsive" data-toggle="modal" data-target="#portfolio">
+             <img src="../images/portfolio.jpg" alt="Image of Portfolio site" class="img-responsive" data-toggle="modal" data-target="#portfolio">
             <figcaption>
-                <a href="http://www.bethpalmer.co.uk/index.html"><h3 class="text-center text-uppercase">Portfolio Site</h3></a>
+                <a href="#"><h3 class="text-center text-uppercase">Portfolio Site</h3></a>
                 <ul>
                     <li>Fully responsive portfolio site created using bootstrap framework.</li>
                     <li>This includes graphic design elements created specifically for the site.</li>
@@ -105,18 +100,9 @@
             </figcaption>
         </figure>
       </div>
-      <!-- <div class="col-xs-12 col-sm-6 col-md-4">
-        <figure class="middle">
-            <img src="images/Love_500x350.png" alt="The word Love coloured in rainbow collage effect" class="img-responsive" data-toggle="modal" data-target="#bstylee_co">
-            <figcaption>
-                <a href="http://www.bstylee.co.uk" target="_blank"><h3 class="text-center text-uppercase">BStylee.co.uk</h3></a>
-                <p>My personal portfolio of print designs: commissioned by the universe, created by me. Site created in wordpress, branding inkeeping with it's sister site bstylee.me.uk. Designs soon to be added to a dribble account.</p>
-            </figcaption>
-        </figure>
-      </div> -->
       <div class="col-xs-12 col-sm-6 col-md-4">
         <figure class="middle"> 
-            <img src="images/bstylee_me.png" alt="Image showing the brand logo and header of the bstylee.me.uk blog site" class="img-responsive" data-toggle="modal" data-target="#bstylee_me">
+            <img src="../images/bstylee_me.png" alt="Image showing the brand logo and header of the bstylee.me.uk blog site" class="img-responsive" data-toggle="modal" data-target="#bstylee_me">
             <figcaption>
                 <a href="http://www.bstylee.me.uk" target="_blank"><h3 class="text-center text-uppercase">BStylee Blog</h3></a>
                 <ul>
@@ -138,7 +124,7 @@
 				<li><a href="https://www.facebook.com/BStyleeCreates/" class="brandico-facebook-rect" target="_blank"></a></li>
 				<li><a href="https://github.com/bethpalmer" class="brandico-github" target="_blank"></a></li>
 				<li><a href="https://www.linkedin.com/in/beth-palmer-75789521?trk=nav_responsive_tab_profile" class="brandico-linkedin-rect" target="_blank"></a></li>
-                <li><a href="http://www.bstylee.me.uk/wp-admin/profile.php" class="brandico-wordpress"></a></li>
+        <!-- <li><a href="http://www.bstylee.me.uk/wp-admin/profile.php" class="brandico-wordpress"></a></li> -->
 <!--                 <li><a href="#" class="zocial-dribbble"></a></li>
                 <li><a href="#" class="brandico-instagram-filled"></a></li>
 				<li><a href="#" class="entypo-pinterest-circled"></a></li> -->
@@ -157,8 +143,8 @@
           <div class="modal-content">
               <div class="modal-header"> <h4 class="modal-title text-center" id="mcuk_Label">Mondays Child UK Responsive Website</h4></div>
               <div class="modal-body">
-                  <img class="img-responsive" src="images/mcuk.jpg" alt="Image of logo section of Mondays Child UK site">
-                  <img class="img-responsive" src="images/mcuk-mobile.jpg" alt="Images of mobile views of Mondays Child UK site">
+                  <img class="img-responsive" src="../images/mcuk-laptop.jpg" alt="Image of logo section of Mondays Child UK site">
+                  <img class="img-responsive" src="../images/mcuk-mobile.jpg" alt="Images of mobile views of Mondays Child UK site">
               </div>
               <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
           </div>
@@ -169,7 +155,7 @@
           <div class="modal-content">
               <div class="modal-header"> <h4 class="modal-title text-center" id="game_Label">Clone of a Classic Arcade Game</h4></div>
               <div class="modal-body">
-                  <img class="img-responsive" src="images/you-loose.jpg" alt="Image of game over screen on arcade game">
+                  <img class="img-responsive" src="../images/you-loose.jpg" alt="Image of game over screen on arcade game">
               </div>
               <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
           </div>
@@ -180,7 +166,7 @@
           <div class="modal-content">
               <div class="modal-header"> <h4 class="modal-title text-center" id="resume_Label">Online CV on mobile</h4></div>
               <div class="modal-body">
-                  <img class="img-responsive" src="images/cv-mobile.jpg" alt="Images of mobile view header and footer on CV site">
+                  <img class="img-responsive" src="../images/cv-mobile.jpg" alt="Images of mobile view header and footer on CV site">
               </div>
               <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
           </div>
@@ -191,52 +177,12 @@
           <div class="modal-content">
               <div class="modal-header"> <h4 class="modal-title text-center" id="portfolio_Label">Portfolio Site</h4></div>
               <div class="modal-body">
-                  <img class="img-responsive" src="images/portfolio-mobile.jpg" alt="Images of portfolio site on mobile">
+                  <img class="img-responsive" src="../images/portfolio-mobile.jpg" alt="Images of portfolio site on mobile">
               </div>
               <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
           </div>
       </div>
   </div>
-  <!-- <div class="modal fade" id="bstylee_co" tabindex="-1" role="dialog" aria-labelledby="BS_co_Label" aria-hidden="true">
-	  <div class="modal-dialog">
-		  <div class="modal-content">
-			  <div class="modal-header"> <h4 class="modal-title text-center" id="BS_co_Label">BStylee.co.uk Design Portfolio Site</h4></div>
-			  <div class="modal-body">
-				  <div class="row">
-					  <div class="col-xs-6 modal-images">
-						  <figure>
-							<img class="img-responsive" src="images/Love_500x350.png" alt="The word Love coloured in rainbow collage effect">
-						  	<figcaption class="text-justified">
-						  	</figcaption>
-						  </figure>
-			  		  </div>
-					  <div class="col-xs-6 modal-images">
-						  <figure>
-							<img class="img-responsive" src="images/life_lessons_dung_beetle.png" alt="Image accompanying poem which reads: Life will always give you shit, There's no reason to get down about it, Roll all that shit up into a big ball of poo, And bury it deep is the best thing to do. Or, deal with it like a grown up, if you want to - whichever.">
-						  	<figcaption class="text-justified">
-						  	</figcaption>
-						  </figure>
-			  		  </div>				  
-					  <div class="col-xs-6 modal-images">
-						  <figure>
-							<img class="img-responsive" src="images/LoveBomb-featured.png" alt="Image of a cartoon effect bomb going off with caption, 'You just exploded my love bomb'">
-						  	<figcaption class="text-justified">
-						  	</figcaption>
-						  </figure>
-			  		  </div>
-					  <div class="col-xs-6 modal-images">
-						  <figure>
-							<img class="img-responsive" src="images/brighton_heart_icons.png" alt="A heart shape filled with small images of Brighton icons and landmarks">
-						  	<figcaption class="text-justified">
-						  	</figcaption>
-						  </figure>
-			  		  </div>
-					</div>
-				  </div>
-			  <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
-		  </div>
-	  </div>
-  </div> -->
   <div class="modal fade" id="bstylee_me" tabindex="-1" role="dialog" aria-labelledby="BS_me_Label" aria-hidden="true">
 	  <div class="modal-dialog">
 		  <div class="modal-content">

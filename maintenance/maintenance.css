@@ -1,0 +1,49 @@
+body {
+	font-family: 'Amatic SC', cursive;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 16;
+	background: black;
+	color: white;
+	width: 100vw;
+}
+
+.main {
+/*	height: 300px;*/
+	max-width: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	top: 10%;
+	/*margin-top: -150px;*/
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 2em;
+	letter-spacing: 4px;
+}
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+h3 {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+
+p {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+}
+
+.star {
+	width: 25px;
+	margin: 0 0.5em;
+	padding-top: 1em;
+}
