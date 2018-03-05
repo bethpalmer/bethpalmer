@@ -70,12 +70,14 @@ footer li {
 
 figure.middle {
   margin: 1em 1em 1em 1em;
+  height: 520px;
 }
 
 figure.middle > img {
-	border-style: solid;
+/*	border-style: solid;
 	border-width: 1px;
-	border-color: lightgrey;
+	border-color: lightgrey;*/
+  padding-left: 50px;
 	cursor: pointer;
 }
 
@@ -128,6 +130,20 @@ figure.middle > img {
 
 a.modal-links {
 	color: blue;
+}
+
+ul {
+  list-style-image: url(../images/flower-bullet.png);
+/*  padding-left: 20px;*/
+}
+
+ul li {
+  color: #999999;
+  letter-spacing: 0.5px;
+}
+
+ul.social {
+  list-style: none;
 }
 
 /*  Bootstrap Clearfix */
